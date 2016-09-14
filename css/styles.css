@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #23251a;
+}
+@font-face {
+    font-family: Amble-Regular;
+    src: url("../fonts/Amble-Regular.ttf");
+}
+@font-face {
+    font-family: Amble-Bold;
+    src: url("../fonts/Amble-Bold.ttf");
+}
+@font-face {
+    font-family: BECKETT_;
+    src: url("../fonts/BECKETT_.ttf");
+}
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+/* unvisited link */
+.headerLink:link {
+    color: #000;
+    text-decoration: none;
+}
+
+/* visited link */
+.headerLink:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.headerLink:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* selected link */
+.headerLink:active {
+    color: #000;
+    text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  min-height: 15%;
+  background-color: #000;
+  z-index: 100;
+}
+.headerContent {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+  font-family: BECKETT_;
+  display: inline-block;
+  color: #fff;
+  font-size: 10vh;
+  margin-top: 1%;
+ width: 100%;
+ text-align: center;
+}
+.dateLine {
+
+  position: relative;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+margin: 0;
+  border: 1px solid #fff;
+  padding: 1%;
+  background-color: #e6edad;
+}
+.theDate {
+  font-family: Amble-Bold;
+  color: #000;
+  width: 20%;
+}
+.mainMenu {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+
+}
+.mainMenu li {
+  font-family: Amble-Bold;
+  display: inline-block;
+}
+
+.headerLink {
+  color: #000;
+  margin: 0 3vw 0 3vw;
+  text-decoration: none;
+}
+.rightCTA {
+  position:relative;
+    list-style-type: none;
+  width: 20%;
+  display: inline-block;
+  color: #000;
+text-align: right;
+margin-right: 2%;
+}
+.rightCTA li {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: Amble-Bold;
+  display: inline-block;
+}
+
+
+/*----------------------------------------------------------------------*/
+.jumbo {
+  position: relative;
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-color: lightgray;
+  overflow: hidden;
+
+}
+.jumbo img {
+  position:relative;
+  margin: 0 auto;
+  display: block;
+
+  animation: zoom 60s infinite;
+}
+
+.textBox {
+  position: absolute;
+  height: auto;
+  width: auto;
+  z-index: 10;
+  max-width: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  bottom: 15%;
+}
+.textBoxTitle {
+  padding: 10px;
+  font-size: 10vh;
+  color: #fff;
+}
+.textBoxSub {
+  font-family: Amble-Regular;
+  padding: 10px;
+  color: #fff;
+  font-size: 3vh;
+}
+.textBoxFooter {
+  background-color: #fff;
+  padding: 3px;
+  text-align: right;
+}
+
+@keyframes zoom {
+    0% {left: 0;}
+    5% {top: 0;}
+    10% {transform: scale(1);}
+    33% {left: -60%;}
+    35% {top: -90%;}
+    36% {transform: scale(1.25);}
+    65% {top: -100%;}
+    90% {left:0;}
+    95% {top: 0;}
+    100% {transform: scale(1);}
+}
+main {
+  margin-bottom: 10vh;
+  background-color: #23251a;
+}
+
+article {
+  display: flex;
+  height: 55vh;
+}
+.contentLeft {
+  position: relative;
+  height: 100%;
+  width: 34%;
+  background-color: lightgray;
+  overflow: hidden;
+  margin: 1px 0 0 0;
+}
+.contentLeftTwoColumn {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background-color: lightgray;
+  overflow: hidden;
+  margin: 1px 0 0 0;
+}
+.contentLeft img {
+  height: 100%;
+}
+.contentRight {
+  position: relative;
+  height: 100%;
+  width: 34%;
+  background-color: lightgray;
+  overflow: hidden;
+  margin: 1px 1px 0 1px;
+}
+.contentRightTwoColumn {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background-color: lightgray;
+  overflow: hidden;
+  margin: 1px 1px 0 1px;
+}
+.contentRight img {
+  width: 100%;
+}
+aside {
+display: flex;
+flex-flow: row;
+flex-wrap: wrap;
+height: 100%;
+width: 32%;
+background-color: #919969;
+margin: 1px 0 0 0;
+}
+.asideArticle {
+  cursor: pointer;
+  position: relative;
+  display:flex;
+  height: 33%;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    width: 100%;
+}
+.asideProfilePic {
+  height: 7vw; /*Use viewport width to preserve aspect ratio of circle*/
+  margin: 3% 3% 2% 2%;
+  width: 7vw;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.asideProfilePic img {
+  width: 100%;
+}
+.asideBody {
+  background-color: #919969;
+  width: 60%;
+  padding: 2%;
+  margin-left:1%;
+}
+h2 {
+  font-family: Amble-Bold;
+}
+h4 {
+  margin: 1vh 0 1vh 0;
+  text-align: left;
+}
+.asideText {
+  font-family: Amble-Regular;
+  color: #343437;
+}
+.asideFooter {
+  position: absolute;
+  background-color: white;
+  top: 80%;
+  right: 0;
+  padding: 3px;
+  height: auto;
+  width: auto;
+}
+
+.textBoxSmTwoColumn {
+  position: absolute;
+  height: auto;
+  width: auto;
+  z-index: 10;
+  max-width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 1%;
+  bottom: 2%;
+}
+.textBoxSm {
+  position: absolute;
+  height: auto;
+  width: auto;
+  z-index: 10;
+  max-width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 1%;
+  bottom: 2%;
+}
+.textBoxTitleSm {
+  padding: 5px;
+  font-size: 5vh;
+  color: #fff;
+}
+.textBoxSubSm {
+  font-family: Amble-Regular;
+  padding: 5px;
+  color: #fff;
+  font-size: 3vh;
+}
+.textBoxFooterSm {
+  background-color: #fff;
+  padding: 3px;
+  text-align: right;
+}
+.socialLinks {
+  height: 10vh;
+  width: 100%;
+  background-color: #000;
+  color:  #635757;
+
+}
+i {
+  float: right;
+  margin: 2vh 3vw 2vh 2vh;
+}
+
+footer {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  height: 8vh;
+  width: 93%;
+  color: #635757;
+  padding: 3vh 2vw 1vh 2vw;
+}
+.footerNotes {
+  margin: 1% 3vw;
+  list-style-type: none;
+  float: right;
+}
+
+.footerNotes li {
+  font-family: Amble-Regular;
+  margin: 2vh 2vw 2vw 0;
+  display: inline-block;
+}
+/*For content.html------------------------------------------------------------*/
+.displayNone {
+  display: none;
+}
+
+.headline {
+  background-color: #f5f9ef;
+  margin: 1% auto;
+  padding: 10px;
+  box-sizing: border-box;
+  height:auto;
+  width: 100%;
+}
+.articleToggle {
+  margin: auto;
+  color: white;
+  display: inline-block;
+  width:93%;
+}
+.articleToggle i {
+  float: left;
+}
+.pageWrapper {
+margin-top: 2vh;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+}
+section {
+  position: relative;
+  padding: 1%;
+  background-color: #fff;
+  height: auto;
+  width: 58%;
+  overflow-y: scroll;
+  margin-right: 1%;
+}
+.articleToggleMobile {
+  display: none;
+}
+.contentPage {
+position: absolute;
+  background-color: #fff;
+  column-count: 2;
+  column-width: 150px;
+  column-rule: 1px solid #000;
+  column-fill: auto;
+}
+pageTwoAside {
+display: flex;
+flex-flow: row;
+flex-wrap: wrap;
+height: 100%;
+width: 32%;
+background-color: #919969;
+margin-left: 1%;
+}
+/*----------------------------------------------------------------------------*/
+@media screen and (max-width: 920px) {
+  h4 {
+    font-size: 0.8em;
+  }
+  .asideText {
+    font-size: 0.8em;
+  }
+
+}
+
+@media screen and (max-width: 885px) {
+
+.rightCTA {
+  text-align: left;
+}
+.rightCTA li {
+  margin-left: 40%;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .textBox {
+    max-width: 50%;
+    left: 45%;
+  }
+
+  .textBoxTitle {
+    padding: 10px;
+    font-size: 6vh;
+    color: #fff;
+  }
+  .textBoxSub {
+    font-family: Amble-Regular;
+    padding: 10px;
+    color: #fff;
+    font-size: 2vh;
+  }
+
+  .textBoxSm {
+    position: absolute;
+    height: auto;
+    width: auto;
+    z-index: 10;
+    max-width: 95%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 2%;
+    bottom: 2%;
+  }
+  .textBoxTitleSm {
+    padding: 5px;
+    font-size: 6vh;
+    color: #fff;
+  }
+  .textBoxSubSm {
+    font-family: Amble-Regular;
+    padding: 1px;
+    color: #fff;
+    font-size: 2vh;
+  }
+
+.rightCTA li {
+  margin-right: 3%;
+  margin-left: 36%;
+}
+}
+@media screen and (max-width: 750px) {
+  .dateLine {
+    justify-content: space-between;
+  }
+.theDate {
+  width: 33%;
+}
+.mainMenu {
+  width: 33%;
+}
+.mainMenu li {
+  display: list-item;
+  list-style-type: none;
+  border: 1px solid  #fff;
+}
+.rightCTA {
+  width: 33%;
+}
+.asideFooter {
+
+  width: 100%;
+  font-size: 0.8em;
+}
+}
+@media screen and (max-width: 615px) {
+  .theDate {
+    font-size: 0.8em;
+  }
+  .mainMenu li {
+    font-size: 0.8em;
+  }
+  .rightCTA {
+    font-size: 0.8em;
+    margin-right: 8vw;
+  }
+
+  .jumbo img {
+
+    width: auto;
+  }
+  .textBoxTitle {
+
+    font-size: 5vh;
+  }
+section {
+  display: inline-block;
+  height: 70vh;
+  width: 95%;
+  margin-bottom: 1vh;
+}
+.articleToggle {
+  display: none;
+}
+.articleToggleMobile {
+  display: block;
+}
+article {
+  width: 100%;
+  display: inline-block;
+
+}
+article img {
+  width: 100%;
+}
+.contentLeft {
+  width: 100%;
+}
+.contentRight {
+  width: 100%;
+}
+aside {
+  display: inline-block;
+  width: 100%;
+}
+.asideArticle {
+  width: 100%;
+display:flex;
+}
+.asideProfilePic {
+  height: 15vw;
+  width: 15vw;
+}
+
+.contentLeftTwoColumn {
+  width: 100%;
+}
+.contentRightTwoColumn {
+  width: 100%;
+
+}
+
+.contentRightTwoColumn img {
+  height: 100%;
+}
+.footerNotes li {
+  font-size: 2vh;
+  display: inline;
+}
+}
