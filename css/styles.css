@@ -13,10 +13,19 @@ body {
     font-family: Amble-Bold;
     src: url("../fonts/Amble-Bold.ttf");
 }
-@font-face {
-    font-family: BECKETT_;
-    src: url("../fonts/BECKETT_.ttf");
-}
+
+   @font-face {
+    font-family: 'BECKETT_';
+    src: url('./BECKETT_.eot');
+    src: url('./BECKETT_.eot?#iefix') format('embedded-opentype'),
+         url('./BECKETT_.woff') format('woff'),
+         url('./BECKETT_.ttf') format('truetype'),
+         url('./BECKETT_.svg#Sri-TSCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+
 a:link {
     color: #fff;
     text-decoration: none;
